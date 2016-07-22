@@ -1,0 +1,700 @@
+/* CUSTOM CSS FILE */
+
+body {
+  position: relative;
+}
+
+.bg {
+	background: url('../2016front.jpg') no-repeat center 38%;
+  background-size: 100%;
+  position: fixed;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  left: 0;
+	z-index: -100;
+	overflow: hidden;
+}
+
+.bg img {
+	position: absolute;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  height: 400px;
+  background: transparent;
+  text-shadow: black 0.1em 0.1em 0.1em;
+  text-align: center;
+  color: white;
+}
+
+.inverse-dropdown {
+  background-color: #222;
+  border-color: #080808;
+}
+
+.inverse-dropdown li a {
+  color: #999;
+}
+
+.inverse-dropdown li a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.second {
+  position: relative;
+  background-color: white;
+  width: 100%;
+	z-index: 100;
+  padding-bottom: 4%;
+}
+
+.third {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  background-color: #F7F7F7;
+  padding-bottom: 4%;
+}
+
+.basic-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.basic-container table {
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.basic-container tr td {
+  text-align: justify;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+.sched {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float: none;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+    zoom: 1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align: center;
+}
+
+.nav-tabs > li > a {
+  padding-bottom: 0;
+}
+
+.speak {
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.speaker {
+  display: inline-table;
+  width: 28.5%;
+  margin-bottom: 8%;
+  margin-left: 2.2%;
+  margin-right: 2.2%;
+}
+
+.speaker-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.speaker-img img {
+  width: 50%;
+}
+
+#hannes1 {
+  display: none;
+}
+
+.collapse-btn {
+  margin: 14px 0 19px 0;
+  padding: 10px 14px 10px 14px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  outline: none;
+}
+
+.collapse-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:hover, .btn:focus {
+  color: white;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.btn:active, .btn.active {
+  outline: 0;
+  box-shadow: none;
+}
+
+a.btn.collapsed {
+  position: relative;
+  box-shadow: none;
+}
+
+a.btn.collapsed:before {
+  content:'';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+a.btn.collapsed:after {
+  text-align: center;
+  content: "View more";
+  display: block;
+}
+
+a.btn {
+  position: relative;
+}
+
+a.btn:before {
+  content:'';
+  position: absolute;
+  width: 9px;
+  height: 10px;
+}
+
+a.btn:after {
+  text-align: center;
+  content: "View less";
+  display: block;
+}
+
+.teams {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 1%;
+}
+
+.circle {
+  display: inline-table;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  line-height: 130px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  background: #FFFFFF;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.circle:hover {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  line-height: 130px;
+  color: rgba(0, 0, 0, 0.0);
+  text-align: center;
+}
+
+#team1 {
+  background: url('../photos/hub-thumb.jpg') no-repeat center 50%;
+  background-size: 160%;
+}
+
+#team1:hover {
+  background: url('../photos/hub.jpg') no-repeat center 50%;
+  background-size: 160%;
+}
+
+#team2 {
+  background: url('../photos/illio-thumb.png') no-repeat center 50%;
+  background-size: 160%;
+}
+
+#team2:hover {
+  background: url('../photos/illio-2.png') no-repeat center 50%;
+  background-size: 160%;
+}
+
+#team3 {
+  background: url('../photos/demo-thumb.jpg') no-repeat center 50%;
+  background-size: 160%;
+}
+
+#team3:hover {
+  background: url('../photos/demo.jpg') no-repeat center 50%;
+  background-size: 160%;
+}
+
+#team4 {
+  background: url('../photos/aaltoegg-thumb.jpg') no-repeat center 50%;
+  background-size: 160%;
+}
+
+#team4:hover {
+  background: url('../photos/aaltoegg-updated.jpg') no-repeat center 50%;
+  background-size: 160%;
+}
+
+#team5 {
+  background: url('../photos/ziph-thumb.jpg') no-repeat center 50%;
+  background-size: 160%;
+}
+
+#team5:hover {
+  background: url('../photos/ziph.jpg') no-repeat center 50%;
+  background-size: 160%;
+}
+
+.info {
+  margin: 0 auto;
+  text-align: justify;
+  width: 95%;
+  padding-top: O;
+}
+
+.info p {
+  text-align: justify;
+}
+
+.info td {
+  padding-right: 2%;
+  width: 50%;
+}
+
+#gallery {
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  width: 100%;
+  z-index: 100;
+}
+
+#galleries-table {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#galleries-table td {
+  padding: 3%;
+}
+
+.galleria {
+  width: 900px; 
+  height: 514px; 
+  background: #F7F7F7;
+  margin: 0 auto;
+}
+
+.team1-galleria {
+  width: 100%;
+  height: 200%;
+  margin: 0 auto;
+}
+
+.team2-galleria {
+  width: 100%;
+  height: 200%;
+  margin: 0 auto;
+}
+
+.team3-galleria {
+  width: 100%;
+  height: 200%;
+  margin: 0 auto;
+}
+
+.team4-galleria {
+  width: 100%;
+  height: 200%;
+  margin: 0 auto;
+}
+
+.team5-galleria {
+  width: 100%;
+  height: 200%;
+  margin: 0 auto;
+}
+
+.examples-galleria {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.examples-galleria img {
+  width: 33%;
+}
+
+#orientationtext p {
+  text-align: justify;
+}
+
+#orientation p {
+  text-align: justify;
+}
+
+#orientationbtn {
+  float: left;
+}
+
+.contact {
+  position: relative;
+  width: 49%;
+  height: 0;
+  display: inline-block;
+  padding-bottom: 35%;
+  padding-right: 2%;
+}
+
+.contact p.lead {
+  text-align: left;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ONLY FOR TEAM SECTION */
+@media screen and (max-width: 1060px) {
+  .teams {
+    width: 50%;
+  }
+
+}
+
+/* CONTACT section map fix */
+@media screen and (max-width: 1080px) {
+  .contact {
+    padding-bottom: 45%;
+  }
+
+}
+
+/* SLIGHTLY SLIMMER */
+@media screen and (max-width: 1000px) {
+  .basic-container {
+    width: 80%;
+  }
+
+  .sched {
+    width: 80%;
+  }
+
+  .speak {
+    width: 80%;
+  }
+
+  .speaker {
+    position: relative;
+    width: 45%;
+  }
+
+  .speaker-img img {
+    width: 30%;
+  }
+
+  #hannes1 {
+    display: inline-table;
+  }
+
+  #hannes2 {
+    display: none;
+  }
+
+  .teams {
+    width: 50%;
+  }
+
+  .contact {
+    padding-bottom: 42%;
+  }
+
+  .galleria {
+    width: 750px;
+    height: 428px;
+  }
+
+  #galleries-table {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 970px) {
+  .examples-galleria img {
+    width: 48%;
+  }
+}
+
+/* EVEN SLIMMER - only needed for contact */
+@media screen and (max-width: 900px) {
+  .contact {
+    padding-bottom: 58%;
+  }
+}
+
+/* ONLY FOR TEAM SECTION */
+@media screen and (max-width: 850px) {
+  .teams {
+    width: 60%;
+  }
+}
+
+
+/* PAD VERSION */
+
+@media screen and (max-width: 800px) {
+  .basic-container {
+    width: 90%;
+  }
+
+  .sched {
+    width: 90%;
+  }
+
+  .speak {
+    width: 90%;
+  }
+
+  .speaker-img {
+    position: relative;
+    width: 100%;
+  }
+
+  .teams {
+    width: 65%;
+  }
+
+  .contact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: auto;
+    padding-bottom: 2%;
+    padding-right: 2%;
+  }
+
+  #map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .galleria {
+    width: 600px;
+    height: 342px;
+  }
+
+  #galleries-table {
+    width: 50%;
+  }
+
+}
+
+
+@media screen and (max-width: 650px) {
+  .circle {
+    display: inline-table;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    line-height: 110px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    background: #FFFFFF;
+    margin: 1%;
+  }
+
+  .circle:hover {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    line-height: 110px;
+    text-align: center;
+  }
+
+  .galleria {
+    width: 500px;
+    height: 285px;
+  }
+
+}
+
+
+@media screen and (max-width: 555px) {
+  .circle {
+    display: inline-table;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    line-height: 100px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    background: #FFFFFF;
+    margin: 1%;
+  }
+
+  .circle:hover {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  .galleria {
+    width: 400px;
+    height: 228px;
+  }
+
+  #galleries-table {
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 505px) {
+  .circle {
+    display: inline-table;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    line-height: 90px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    background: #FFFFFF;
+    margin: 1%;
+  }
+
+  .circle:hover {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    line-height: 90px;
+    text-align: center;
+  }
+
+  .examples-galleria img {
+    width: 98%;
+  }
+  
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 480px) {
+  .basic-container {
+    width: 90%;
+  }
+
+  .sched {
+    width: 90%;
+  }
+
+  .speak {
+    width: 90%;
+  }
+
+  .speaker {
+    position: relative;
+    width: 100%;
+  }
+
+  .speaker-img {
+    position: relative;
+    width: 100%;
+  }
+
+  .speaker-img img {
+    width: 30%;
+  }
+
+  .teams {
+    width: 80%;
+  }
+
+  .contact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: auto;
+    padding-bottom: 2%;
+    padding-right: 2%;
+  }
+
+  #map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .galleria {
+    width: 300px;
+    height: 171px;
+  }
+
+  #galleries-table {
+    width: 90%;
+  }
+
+}

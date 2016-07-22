@@ -1,0 +1,534 @@
+/*Theme Name: Startup Garden
+Theme URI: http://startupsummerprogram.org/wordpress/wp-content/themes/startupgarden
+Description: A theme for Startup Garden
+Version: 1.0 or any other version you want
+Author: Joanna Mehtälä
+Author URI: http://www.startupsummerprogram.org
+Tags: custom theme, HTML to Wordpress, Startup Garden, responsive
+*/
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/starter-template.css');
+@import url('galleria-custom.css');
+@import url('galleria/themes/classic/galleria.classic.css');
+
+@font-face {
+    font-family: 'karlaregular';
+    src: url('fonts/karla-regular-webfont.eot');
+    src: url('fonts/karla-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/karla-regular-webfont.woff2') format('woff2'),
+         url('fonts/karla-regular-webfont.woff') format('woff'),
+         url('fonts/karla-regular-webfont.ttf') format('truetype'),
+         url('fonts/karla-regular-webfont.svg#karlaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'leckerlioneregular';
+    src: url('fonts/leckerlione-regular-webfont.eot');
+    src: url('fonts/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/leckerlione-regular-webfont.woff2') format('woff2'),
+         url('fonts/leckerlione-regular-webfont.woff') format('woff'),
+         url('fonts/leckerlione-regular-webfont.ttf') format('truetype'),
+         url('fonts/leckerlione-regular-webfont.svg#leckerlioneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  font-family: 'karlaregular';
+}
+
+.content {
+  height: 100%;
+}
+
+.bg {
+	background: url('front.jpg') no-repeat center 60%;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  left: 0;
+	z-index: -100;
+	overflow: hidden;
+}
+
+.bg-post {
+  position: fixed;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  overflow: hidden;
+}
+
+.bg img {
+	position: absolute;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  height: 400px;
+  background: transparent;
+  text-shadow: black 0.1em 0.1em 0.1em;
+  text-align: center;
+  color: white;
+  font-family: 'leckerlioneregular';
+}
+
+.lead {
+  text-align: center;
+}
+
+.wrapper {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+  padding-bottom: 2%;
+}
+
+.text-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 4%;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+}
+
+#schedule {
+  overflow: hidden;
+}
+
+.sched {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.sched table {
+  font-size: 1em;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float: none;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+    zoom: 1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.nav-tabs > li > a {
+  padding-bottom: 0;
+}
+
+#schedule .yellow .active a,
+#schedule .yellow .active a:hover
+#schedule .yellow .active a:focus {
+  color: #202020;
+  background-color: #ffff66;
+}
+
+#schedule .nav-pills > .active > a,
+#schedule .nav-pills > .active > a:hover
+#schedule .nav-pills > .active > a:focus {
+  color: #202020;
+  background-color: #ffff66;
+}
+
+.tab-content p {
+  display: none;
+}
+
+#teams {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#people, #teams {
+  overflow: hidden;
+}
+
+#people-table, #teams-table {
+  display: -ms-flexbox;
+  display: flexbox;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: 0 15px;
+  margin: 10px 0;
+  list-style: none;
+  width: auto;
+  height: auto;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  box-sizing: border-box; 
+}
+
+#teams-table {
+  margin-top: 20px;
+}
+
+.person_image_wrapper {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.person img {
+  width: 70%;
+  height: auto;
+  padding-bottom: 5%;
+}
+
+.circle {
+  width: 75%;
+  height: 0;
+  padding-bottom: 75%;
+  background-size: cover;
+  background-position: 50%;
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.person h4,
+.team h4 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.person h5,
+.team h5 {
+  text-align: center;
+  font-size: 1.1em;
+  text-decoration: bold;
+}
+
+.team-text {
+  margin-top: 20px;
+}
+
+#button-wrapper {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.collapse-btn {
+  margin: 14px 0 19px 0;
+  padding: 10px 14px 10px 14px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  outline: none;
+}
+
+.collapse-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:hover, .btn:focus {
+  color: white;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.btn:active, .btn.active {
+  outline: 0;
+  box-shadow: none;
+}
+
+a.btn.collapsed {
+  position: relative;
+  box-shadow: none;
+}
+
+a.btn.collapsed:before {
+  content:'';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+a.btn.collapsed:after {
+  text-align: center;
+  content: "View more";
+  display: block;
+}
+
+a.btn {
+  position: relative;
+}
+
+a.btn:before {
+  content:'';
+  position: absolute;
+  width: 9px;
+  height: 10px;
+}
+
+a.btn:after {
+  text-align: center;
+  content: "View less";
+  display: block;
+}
+
+#gallery {
+  width: 100%;
+  z-index: 100;
+  background-color: #FFFFFF;
+}
+
+.galleria {
+  width: 850px; 
+  height: 514px; 
+  background: #F7F7F7;
+  margin: 0 auto;
+}
+
+.childpagelist {
+  list-style-type: none;
+  font-size: 2em;
+}
+
+.full-galleries {
+  width: 90%;
+}
+
+#news-wrapper {
+  padding-top: 5%;
+}
+
+#contact {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 2%;
+}
+
+#contact-table {
+  padding-top: 20px;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+@media screen and (min-width: 1000px) {
+  .person {
+    text-decoration: none;
+    margin: 10px 2.5%;
+    width: 30%;
+    box-sizing: border-box;
+  }
+
+  .person:nth-child(3n+1) {
+    margin-left: 0;
+  }
+
+  .person:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .person:nth-child(n+4) {
+    display: none;
+  }
+
+  .team {
+    text-decoration: none;
+    margin: 10px 2%;
+    width: 22%;
+    box-sizing: border-box; 
+  }
+
+  .team:nth-child(4n+1) {
+    margin-left: 0;
+  }
+
+  .team:nth-child(4n) {
+    margin-right: 0;
+  }
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  .person, .team {
+    margin: 10px 3%;
+    width: 47%;
+    box-sizing: border-box;
+  }
+
+  .person:nth-child(2n+1), 
+  .team:nth-child(2n+1) {
+    margin-left: 0;
+  }
+
+  .person:nth-child(2n), 
+  .team:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .person:nth-child(n+3) {
+    display: none;
+  }
+
+  .circle {
+    width: 65%;
+    height: 0;
+    padding-bottom: 65%;
+  }
+
+  .text-container {
+    width: 80%;
+  }
+
+  .full-galleries {
+    width: 90%;
+  }
+
+  .galleria {
+    width: 700px;
+    height: 428px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .person, .team {
+    margin: 10px 3%;
+    width: 47%;
+    box-sizing: border-box;
+  }
+
+  .person:nth-child(2n+1), 
+  .team:nth-child(2n+1) {
+    margin-left: 0;
+  }
+
+  .person:nth-child(2n), 
+  .team:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .person:nth-child(n+3) {
+    display: none;
+  }
+
+  .circle {
+    width: 65%;
+    height: 0;
+    padding-bottom: 65%;
+  }
+
+  .text-container {
+    width: 90%;
+  }
+
+  .galleria {
+    width: 600px;
+    height: 342px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .person, .team {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .person:nth-child(n+2) {
+    display: none;
+  }
+
+  .circle {
+    width: 65%;
+    height: 0;
+    padding-bottom: 65%;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  #contact-map {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .galleria {
+    width: 500px;
+    height: 285px;
+  }
+
+}
+
+@media screen and (max-width: 555px) {
+
+  .galleria {
+    width: 400px;
+    height: 228px;
+  }
+
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 480px) {
+
+  .text-container {
+    width: 90%;
+  }
+
+  .galleria {
+    width: 300px;
+    height: 171px;
+  }
+
+}
